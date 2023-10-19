@@ -14,16 +14,17 @@ server.get('/', async (req, res) => {
 })
 
 server.post('/', async (req, res) => {
+        console.log(req.body)
     
-    const body = JSON.parse(req.body);
-    const response = {
-        'type': 'message',
-        'text': 'hello! Mr. ' + body.from.name + '. You said : ' + body.text
-    };
-    console.log(response)
+    // const body = JSON.parse(req.body);
+    // const response = {
+    //     'type': 'message',
+    //     'text': 'hello! Mr. ' + body.from.name + '. You said : ' + body.text
+    // };
+    // console.log(response)
 
 
-  res.json(response)
+  res.res(req.body)
 })
 
 server.listen(PORT, () => {
