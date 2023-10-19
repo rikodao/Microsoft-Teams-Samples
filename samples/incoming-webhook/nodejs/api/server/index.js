@@ -24,7 +24,7 @@ server.post('/', async (req, res) => {
     // console.log(response)
 
 
-  res.res(req.body)
+  res.send(req.body)
 })
 
 server.listen(PORT, () => {
