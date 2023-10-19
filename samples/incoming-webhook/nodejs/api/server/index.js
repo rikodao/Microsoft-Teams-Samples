@@ -15,7 +15,7 @@ server.get('/', async (req, res) => {
 
 server.post('/', async (req, res) => {
     
-    const body = JSON.parse(event.body);
+    const body = JSON.parse(req.body);
     const response = {
         'type': 'message',
         'text': 'hello! Mr. ' + body.from.name + '. You said : ' + body.text
