@@ -14,7 +14,7 @@ server.get('/', async (req, res) => {
 })
 
 server.post('/', async (req, res) => {
-        console.log(req.header)
+        console.log(req.headers)
         console.log(req.body)
     
     const body = req.body;
