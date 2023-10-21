@@ -7,7 +7,7 @@ server.use(express.urlencoded({
     extended: true
 }));
 const model = new Bedrock({
-    model: 'anthropic.claude-v2',
+    model: 'anthropic.claude-instant-v1',
     region: 'us-east-1'
 });
 
